@@ -1,0 +1,209 @@
+body {
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-color: #222211;
+    overflow: hidden;
+    display: compact;
+}
+
+.banner a {
+    width: 100px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: "Source Han Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.banner a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.banner a.active {
+    background-color: dimgrey;
+    color: white;
+}
+
+.banner a.logo {
+    font-weight: bolder;
+    color: midnightblue;
+    background-color: #f2f2f2;
+}
+h1, h2, h3, h4, h5, h6, p , label{
+    color: #f2f2f2;
+    text-align: center;
+    font-family: "Source Han Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    display: compact;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+
+.column {
+    background-color: #333333;
+    border-radius: 5px;
+    border: thin solid #ddd;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2em;
+    /*width: 60%;*/
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.input-group > label {
+    width: 150px;
+    margin-right: 1em;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1em;
+    white-space: nowrap;
+}
+
+
+.input-group > input {
+    flex: 1;
+    padding: .5em;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #444444;
+    color: #f2f2f2;
+}
+
+.input-group > input::placeholder{
+    color: #f2f2f2;
+    text-align: center;
+    font-family: "Source Han Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.input-group > p {
+    flex: 1;
+    padding: .5em;
+    color: #f2f2f2;
+    font-family: "Source Han Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+#update-profile {
+    padding: 15px 20px;
+    background-color: #666666;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+#update-profile:hover {
+    background-color: #888888;
+}
+
+#update-profile:focus {
+    outline: 2px solid #f2f2f2;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.error {
+    background-color: salmon;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: darkseagreen;
+    border-radius: 5px;
+}
+
+.message {
+    color: #f2f2f2;
+    text-align: center;
+    font-family: "Source Han Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+    font-family: "Source Han Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.post > img,
+.column > img {
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.post:not(:has(img)) {
+    justify-content: center;
+}
+
+.post > p,
+.column > p {
+    margin-top: 1em;
+}
+
+.post > button {
+    font-family: "Source Han Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 30%;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #444444;
+    color: #f2f2f2;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.post > button:hover {
+    background-color: #555555;
+}
+
+

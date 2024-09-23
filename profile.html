@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Larry-Kuo">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload=setUp()>
+
+    <div class="banner">
+        <a class="logo">RiceBook</a>
+        <a href="main.html">Feed</a>
+        <a class="active">Profile</a>
+    </div>
+    <h1>Profile Page</h1>
+    <div class="container">
+    <div class = "row  hidden">
+        <div class = "column success message" id="success-message">
+            <p>successful message</p>
+        </div>
+    </div>
+    <div class = "row hidden">
+        <div class = "column error message" id="error-message">
+            <p>error message</p>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "column">
+            <div class = "input-group">
+                <label for="new-account-name">Account Name </label>
+                <p>Kuan-Liang Kuo</p>
+                <input id="new-account-name" class="invisible">
+            </div>
+            <div class = "input-group">
+                <label for="date-of-birth">Date of Birth </label>
+                <p>2000-12-22</p>
+                <input id="date-of-birth" type="date" class="invisible">
+            </div>
+            <div class = "input-group">
+                <label for="new-display-name">Display Name </label>
+                <p id="display-name">Larry Kuo</p>
+                <input id="new-display-name">
+            </div>
+            <div class = "input-group">
+                <label for="new-email">Email Address </label>
+                <p id="email">kk123@rice.edu</p>
+                <input id="new-email" placeholder="aaa@bbb.ccc">
+            </div>
+            <div class = "input-group">
+                <label for="new-phone">Phone Number </label>
+                <p id="phone">2817739400</p>
+                <input id="new-phone">
+            </div>
+            <div class = "input-group">
+                <label for="new-zipcode">Zipcode </label>
+                <p id="zipcode">77005</p>
+                <input id="new-zipcode" placeholder="77005">
+            </div>
+            <div class = "input-group">
+                <label for="new-password">Password </label>
+                <p id="password">********</p>
+                <input id="new-password" type="password">
+            </div>
+            <div class = "input-group">
+                <label for="password-confirmation">Confirmation</label>
+                <input id="password-confirmation" type="password">
+            </div>
+            <br>
+            <button type="button" id="update-profile">Update Profile</button>
+        </div>
+    </div>
+    </div>
+<!--    <br><br>-->
+
+</body>
+<script src = "profile.js" defer></script>
+</html>
